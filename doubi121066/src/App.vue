@@ -25,7 +25,7 @@
       </router-link>
     </nav>
     <!-- <h1>{{this.$store.state}}</h1> -->
-    <input type="text" v-model="msg" v-on:input="testHand">
+   
   </div>
 </template>
 
@@ -37,10 +37,7 @@ export default {
     };
   },
   methods: {
-    testHand(e) {
-      this.msg = e.target.value;
-      console.log(this.msg);
-    }
+   
   }
 };
 </script>

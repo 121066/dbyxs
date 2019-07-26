@@ -30,21 +30,21 @@
         </router-link>
       </li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-        <a href="#">
+        <router-link to="/home/list">
           <img src="../../images/menu3.png" alt>
           <div class="mui-media-body">商品购买</div>
-        </a>
+        </router-link>
       </li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-        <a href="#">
+        <router-link to="/home/Weatherlist">
           <img src="../../images/menu4.png" alt>
-          <div class="mui-media-body">留言反馈</div>
-        </a>
+          <div class="mui-media-body">天气查询</div>
+        </router-link>
       </li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
         <a href="#">
           <img src="../../images/menu5.png" alt>
-          <div class="mui-media-body">视频专区</div>
+          <div class="mui-media-body">搞笑段子</div>
         </a>
       </li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
@@ -56,13 +56,16 @@
     </ul>
     <!-- <h1>我是{{$store.state.user}}</h1> -->
     <!-- <button @click="changeUser">点我修改</button> -->
+     <input type="text" v-model="msg" v-on:input="testHand">
+     <h1>{{msg}}</h1>
   </div>
 </template>
 <script>
 export default {
   data() {
     return {
-      lunbo: []
+      lunbo: [],
+      msg:''
     };
   },
   created() {
@@ -80,6 +83,10 @@ export default {
     },
     changeUser() {
       this.$store.commit("change", "王五");
+    },
+     testHand(e) {
+      this.msg = e.target.value;
+      console.log(this.msg);
     }
   }
 };
@@ -118,5 +125,10 @@ export default {
   .mui-media-body {
     font-size: 12px;
   }
+}
+h1{
+  background-color: #00a4ff;
+  color: orange;
+  box-shadow: 0 0 10px #ccc;
 }
 </style>
