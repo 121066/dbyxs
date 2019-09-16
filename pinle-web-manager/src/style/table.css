@@ -1,0 +1,101 @@
+.first,
+.last {
+  cursor: pointer;
+}
+.disabled {
+  cursor: not-allowed !important;
+}
+.el-pagination button,
+.el-pagination span:not([class*="suffix"]) {
+  min-width: 30px;
+}
+.el-input__inner {
+  height: 30px;
+}
+.jumpType .el-input__inner {
+  padding-left: 10px;
+}
+.status .el-input__inner {
+  padding-left: 10px;
+}
+thead tr {
+  background-color: #e6e9f2 !important;
+}
+.el-table th {
+  background-color: transparent;
+}
+.el-input--mini .el-input__inner {
+  height: 30px;
+}
+.el-pagination .el-select .el-input {
+  margin: 0;
+}
+.el-pager li.active {
+  background-color: #8b98ed;
+  position: relative;
+}
+th > .cell {
+  text-align: center;
+  color: #333;
+}
+.el-input__icon {
+  line-height: 30px;
+}
+.el-table td > .cell {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.el-table tr {
+  background-color: tansparent;
+}
+.el-table__row > td {
+  height: 32px;
+}
+.el-select {
+  width: 100px;
+}
+.table {
+  padding: 0 20px;
+  padding-top: 15px;
+  box-sizing: border-box;
+  height: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  flex: 1;
+}
+.table .block {
+  margin-top: 40px;
+}
+.table .block .el-pagination {
+  text-align: center;
+  margin-right: 5px;
+  padding: 0;
+}
+.table .block .el-pagination button {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #dadcde;
+  color: #666;
+  padding: 0;
+}
+.table .block .el-pagination .el-pager {
+  margin-right: 10px;
+}
+.table .block .el-pagination .el-pager li {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dadcde;
+  color: #666;
+  min-width: 0;
+  margin-left: 10px;
+}
+.table .block .el-pagination .el-pagination__jump {
+  margin-left: 10px;
+  color: #666;
+}
+.margin_right_20 {
+  margin-right: 20px;
+}
