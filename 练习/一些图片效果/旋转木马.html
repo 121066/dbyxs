@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            perspective: 2000px;
+        }
+        
+        section {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            margin: 100px auto;
+            transform-style: preserve-3d;
+            animation: rotae 5s infinite linear;
+            background: url(images/timg1.jpg) repeat;
+        }
+        
+        section:hover {
+            animation-play-state: paused;
+        }
+        
+        @keyframes rotae {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+        
+        div {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* background:url(media/dog.jpg) no-repeat; */
+            transform: rotate(45deg) center center;
+        }
+        
+        img {
+            width: 300px;
+            height: 300px;
+        }
+        
+        div:nth-child(1) {
+            transform: rotateY(0) translateZ(300px);
+        }
+        
+        div:nth-child(2) {
+            transform: rotateY(60deg) translateZ(300px);
+        }
+        
+        div:nth-child(3) {
+            transform: rotateY(120deg) translateZ(300px);
+        }
+        
+        div:nth-child(4) {
+            transform: rotateY(180deg) translateZ(300px);
+        }
+        
+        div:nth-child(5) {
+            transform: rotateY(240deg) translateZ(300px);
+        }
+        
+        div:nth-child(6) {
+            transform: rotateY(300deg) translateZ(300px);
+        }
+    </style>
+
+</head>
+
+<body>
+    <section>
+        <div><img src="./images/timg (1).jpg" alt=""></div>
+        <div><img src="./images/timg (2).jpg" alt=""></div>
+        <div><img src="./images/timg (3).jpg" alt=""></div>
+        <div><img src="./images/timg (4).jpg" alt=""></div>
+        <div><img src="./images/timg (5).jpg" alt=""></div>
+        <div><img src="./images/timg.jpg" alt=""></div>
+    </section>
+</body>
+
+</html>
