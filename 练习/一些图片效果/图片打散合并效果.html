@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #00a4ff;
+        }
+        
+        div {
+            width: 300px;
+            height: 300px;
+            margin: 200px auto;
+        }
+        
+        div img {
+            width: 100px;
+            float: left;
+            transition: all 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="button" value="打散" id="db">
+    <input type="button" value="合并" id="ys">
+    <div class="yxs">
+        <img src="./images/001.jpg" alt="">
+        <img src="./images/002.jpg" alt="">
+        <img src="./images/003.jpg" alt="">
+        <img src="./images/004.jpg" alt="">
+        <img src="./images/005.jpg" alt="">
+        <img src="./images/006.jpg" alt="">
+        <img src="./images/007.jpg" alt="">
+        <img src="./images/008.jpg" alt="">
+        <img src="./images/009.jpg" alt="">
+    </div>
+    <script>
+        var db = document.querySelector('#db')
+        var ys = document.querySelector('#ys')
+        var imgs = document.querySelectorAll('.yxs>img')
+        db.onclick = function() {
+            for (var i = 0; i < imgs.length; i++) {
+                var randomDeg = parseInt(Math.random() * 360)
+                var randomX = parseInt(Math.random() * 1200) - 600
+                var randomY = parseInt(Math.random() * 800) - 400
+                imgs[i].style.transform = "translate(" + randomX + "px, " + randomY + "px) rotate(" + randomDeg +
+                    "deg)";
+                console.log(2)
+            }
+        }
+        ys.onclick = function() {
+            console.log(11)
+            for (var i = 0; i < imgs.length; i++) {
+                imgs[i].style.transform = "translate(0px, 0px) rotate(0deg)"
+            }
+        }
+    </script>
+</body>
+
+</html>

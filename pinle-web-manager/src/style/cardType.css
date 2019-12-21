@@ -1,0 +1,113 @@
+.content {
+  width: 100%;
+  flex: 1;
+  padding: 30px;
+  background-color: #eff3f6;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.content .el-main {
+  background-color: #fff;
+  height: 100%;
+  padding: 20px 40px 0;
+}
+.content .el-main .el-collapse {
+  border: none;
+}
+.content .el-main .el-collapse .el-collapse-item .el-collapse-item__header {
+  height: 40px;
+  color: #409eff;
+  border-bottom: 1px solid #e4e5e7;
+}
+.content .el-main .el-collapse .el-collapse-item .el-collapse-item__header .el-collapse-item__arrow {
+  margin: 0;
+  margin-left: 10px;
+}
+.content .el-main .el-collapse .el-collapse-item .el-collapse-item__wrap {
+  margin-top: 20px;
+  border: none;
+}
+.content .el-main .el-collapse .el-collapse-item .el-collapse-item__wrap .el-collapse-item__content {
+  padding: 0;
+  padding-left: 15px;
+}
+.content .el-main .el-collapse .el-collapse-item .el-collapse-item__wrap .el-collapse-item__content .el-form {
+  display: flex;
+}
+.content .el-main .el-collapse .el-collapse-item .el-collapse-item__wrap .el-collapse-item__content .el-form .el-form-item {
+  margin: 0;
+  width: 250px;
+}
+.content .el-main .el-collapse .el-collapse-item .el-collapse-item__wrap .el-collapse-item__content .el-form .el-form-item .el-form-item__label {
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+  color: #000;
+  font-weight: 600;
+  padding: 0;
+}
+.content .el-main .el-collapse .el-collapse-item .el-collapse-item__wrap .el-collapse-item__content .el-form .el-form-item .el-form-item__content {
+  line-height: 30px;
+}
+.content .el-main .el-collapse .el-collapse-item .el-collapse-item__wrap .el-collapse-item__content .el-form .el-form-item .el-form-item__content .el-input .el-input__inner {
+  height: 30px;
+  line-height: 30px;
+}
+.content .el-main .el-collapse .el-collapse-item:nth-of-type(2) .radio {
+  margin-top: 10px;
+}
+.content .el-main .el-collapse .el-collapse-item:nth-of-type(2) .radio .explain {
+  color: #1b76ff;
+  cursor: pointer;
+}
+.content .el-main .el-collapse .el-collapse-item:nth-of-type(2) .radio .explain i {
+  font-size: 16px;
+}
+.content .el-main .el-collapse .el-collapse-item:nth-of-type(2) .msg {
+  padding-left: 25px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+.content .el-main .el-collapse .el-collapse-item:nth-of-type(2) .msg .msg_one {
+  width: 150px;
+  margin-right: 30px;
+}
+.content .el-main .el-collapse .el-collapse-item:nth-of-type(2) .msg .msg_one > .goodsType {
+  padding-left: 35px;
+  box-sizing: border-box;
+}
+.content .el-main .el-collapse .el-collapse-item:nth-of-type(2) .msg .msg_one > .goodsType > div {
+  margin-top: 20px;
+  display: flex;
+}
+.content .el-main .el-collapse .el-collapse-item:nth-of-type(2) .msg .msg_one > .goodsType > div i {
+  color: #7fb2ff;
+  line-height: 25px;
+  cursor: pointer;
+}
+.content .el-main .el-collapse .el-collapse-item:nth-of-type(2) .msg .goodsType:nth-of-type(n + 8) {
+  margin-top: 10px;
+}
+.content .el-main .el-collapse .el-collapse-item:nth-of-type(3) .el-textarea {
+  width: 280px;
+  height: 90px;
+}
+.content .el-main .el-collapse .el-collapse-item:nth-of-type(3) .el-textarea .el-textarea__inner {
+  height: 90px;
+}
+.content .el-checkbox {
+  margin-right: 0;
+}
+.content .el-footer {
+  margin-top: 70px;
+  text-align: center;
+}
+.content .el-footer > button {
+  height: 30px !important;
+  line-height: 30px;
+  padding: 0;
+  width: 60px;
+  margin: 0 70px;
+}

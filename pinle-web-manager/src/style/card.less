@@ -1,0 +1,87 @@
+.content {
+    width: 100%;
+    flex: 1;
+    padding: 30px;
+    background-color: #eff3f6;
+    box-sizing: border-box;
+    overflow: auto;
+    .el-main {
+      background-color: #fff;
+      height: 100%;
+      padding: 20px 40px 0;
+      .el-collapse {
+        border: none;
+        .el-collapse-item {
+          .el-collapse-item__header {
+            height: 40px;
+            color: #409eff;
+            border-bottom: 1px solid #e4e5e7;
+            .el-collapse-item__arrow {
+              margin: 0;
+              margin-left: 10px;
+            }
+          }
+          .el-collapse-item__wrap {
+            margin-top: 20px;
+            border: none;
+
+            .el-collapse-item__content {
+              padding: 0;
+              padding-left: 15px;
+              margin-bottom: 15px;
+              margin-top: 5px;
+              .el-form {
+                display: flex;
+
+                .el-form-item {
+                  margin: 0;
+                  width: 310px;
+                  .el-form-item__label {
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: left;
+                    color: #000;
+                    font-weight: 600;
+                    padding: 0;
+                  }
+                  .el-form-item__content {
+                    line-height: 30px;
+                    height: 30px;
+                    display: flex;
+                    > span {
+                      color: #666;
+                    }
+                    .el-input {
+                        height: 30px;
+                        width: 150px;
+                        .el-input__inner {
+                          height: 30px;
+                          line-height: 30px;
+                          width: 150px;
+                        }
+                      }
+                  }
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
+    .el-checkbox {
+      margin-right: 0;
+    }
+    .el-footer {
+        margin-top: 70px;
+        text-align: center;
+        > button {
+          height: 30px !important;
+          line-height: 30px;
+          padding: 0;
+          width: 60px;
+          margin: 0 70px;
+          // box-sizing: content-box;
+        }
+      }
+  }
