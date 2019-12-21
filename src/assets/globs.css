@@ -1,0 +1,33 @@
+/* ::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+ ::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0;
+}
+
+body {
+    overflow-x: hidden!important;
+    overflow-y: hidden!important;
+    /* background-color: #fff; */
+
+
+/* }
+
+.footer {
+    background-color: #000;
+} */
+
+html {
+    /* margin-top: -40px; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+[v-cloak] {
+    display: none!important;
+}
